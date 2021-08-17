@@ -1,0 +1,363 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: Roboto, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 5;
+    text-align: left;
+    overflow-x: hidden;
+}
+
+header__logo {
+    background: white;
+    width: 160%;
+    text-align: center;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 30%);
+    border-bottom: 2px solid #f4f4f4;
+    padding: 5px 46px;
+}
+
+header {
+  display: block;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: {
+    #e9e9e9;
+  }
+  
+header_logo img{
+    height: 50px;
+    width: 160px;
+  }
+ 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+  
+.localisation {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 200px;
+  }
+  
+form {
+    display: block;
+    margin top: 0em;
+  }
+  
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+img, video {
+    height: auto;
+  max-width: 100%
+  }
+
+div {
+    display: block;
+  }
+  
+.localisation .icones{
+    padding: 8px 10px;
+  }
+
+.fa, .fas {
+      font-weight: 900;
+  }
+
+.fa, .far, .fas {
+      font-family: "Font Awesome 5 free";
+  }
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+  }
+
+i {
+    font-style: italic;
+}
+
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+}
+
+.localisation .champ_recherche {
+    -webkit-box-flex: 1;
+    ms flex: 1 0 0px;
+    flex: 1 0 0;
+}
+
+
+.search__location .input-field input {
+    background-color: transparent;
+    border: 0;
+    padding: 15px 10px;
+    width: 100%;
+}
+button, input, select {
+    margin: 0;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+}
+
+.reservation {
+    flex: 100%;
+    text-align: center;
+    padding: 30px 10px;
+    background-color: #f2f2f2;
+}
+
+article {
+    display: block;
+}
+
+.titres_reservation{
+    margin-bottom: 35px;
+}
+
+p {
+    display: block;
+}
+
+.titres_reservation h1 {
+    margin-bottom: 15px;
+}
+
+.titres_reservation h2, .titres_reservation h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+margin: 0;
+padding: 0;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.reservation h2 {
+    font-size: 15px;
+    font-weight: normal;
+    color: #888;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+a.btn_reservation {
+    display: inline-block;
+    background: linear-gradient(#ff79da, #9356dc);
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 15px;
+    color: #fff;
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+    font-weight: bold;
+    margin: 0 0.3em 0.3em 0;
+    padding: 15px 30px;
+    transition: 0.2s;
+}
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px 5px;
+}
+
+aside {
+    display: block;
+}
+
+.fonctionnement h2{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 15px;
+}
+
+.aside_etapes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.btn_aside {
+    flex: 1 0 auto;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background: #e9e9e9;
+    border-radius: 30px;
+    text-align: justify;
+    margin-left: 0;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    font-weight: bold;
+    padding: 20px 15px;
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+}
+
+.aside__numero {
+    position: absolute;
+    left: 12px;
+    margin-top: -7px;
+    background: #9356dc;
+    border-radius: 100%;
+    color: #fff;
+    height: 25px;
+    width: 25px;
+    line-height: 1.67;
+    padding: 2px 10px;
+    font-weight: bold;
+}
+
+.aside_icones {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: grey;
+    margin: 0 20px 0 25px;
+    position: absolute;
+    font-size: 20px;
+}
+
+i {
+    font-style: italic;
+}
+
+.aside_texte {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+section {
+    display: block;
+}
+
+.restaurants {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.restaurants h2 {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #000;
+}
+
+.cartes {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    min-width: 0;
+    background: #fff;
+    box-shadow: 2px 2px 10px 2px #e9e9e9;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

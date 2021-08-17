@@ -105,7 +105,7 @@ textarea [type="text" i] {
     padding: 1px 2px;
 }
 
-textarea {
+.textarea {
     -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
     color: -internal-light-dark(black, white);
