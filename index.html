@@ -18,7 +18,13 @@
       href="images/logo/ohmyfood@2x.svg"
       type="image/x-icon"
     />
-    <title>Oh my food</title>
+    <style type="text/css"> 
+      a:link 
+      { 
+       text-decoration:none; 
+      } 
+      </style>
+    <title>Ohmyfood</title>
   </head>
 
   <body>
@@ -28,19 +34,21 @@
                   <img src="images/logo/ohmyfood@2x.svg" alt="logo OhMyFood"/>
               </a>
           </div>
-              <div class="localisation">
+              <form class="localisation">
                 <i class="fas fa-map-marker-alt localisation">
                 </i>
-                <textarea type="text" name=comment placeholder="Paris, Belleville"></textarea>
+                <input type="text" name=comment placeholder="Paris, Belleville"></input>
               </div>
+          </form>
       </header>
 
       <main>
           <article class="reservation">
               <p class="titres_reservation">
               <h1>Réservez le menu qui vous convient</h1>
-              <h2>Découvrez des restaurants d'exception</h2></p>
+              <h2>Découvrez des restaurants d'exception</h2>
               <a href="#" class="btn_reservation">Explorer nos restaurants</a>
+              </p>
           </article>
 
           <aside class="fonctionnement">
@@ -79,11 +87,12 @@
                   <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="carte_img"/></a>
                   <figcaption class="Nouveau">Nouveau</figcaption>
                   </figure>
-                  <div class="descriptif_restaurant"><h4>La palette du goût</h4>
-                    <h5>Menilmontant</h5>
-           <div class="like">
+                  <div class="descriptif_restaurant">
+                    <p><h4>La palette du goût</h4>
+                    <h5>Menilmontant</h5></p>
+           <span class="like">
           <i class="far fa-heart default-icon"></i>
-          <i class="fas fa-heart hover-icon"></i></div>
+          <i class="fas fa-heart hover-icon"></i></span>
                     </div>
               </article>
 
@@ -93,14 +102,14 @@
                     <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="La note enchantée" class="carte_img"/></a>
                     <figcaption class="Nouveau">Nouveau</figcaption>
                     </figure>
-                    <div class="descriptif_restaurant"><h4>La note enchantée<h4>
+                    <div class="descriptif_restaurant">
+                      <h4>La note enchantée<h4>
                       <h5>Charonne</h5> 
-           <div class="like">
+           <span class="like">
             <i class="far fa-heart default-icon">
             </i>
-            <i class="fas fa-heart hover-icon"></i></div>
-              </div>
-            </a>
+            <i class="fas fa-heart hover-icon"></i></span>
+          </div>
         </article>
 
         <article class="cartes">
@@ -110,11 +119,11 @@
                 </figure>
                 <div class="descriptif_restaurant"><h4>À la française</h4>
                   <h5>Cité Rouge</h5>
-                <div class="like">
+                <span class="like">
     <i class="far fa-heart default-icon">
     </i>
     <i class="fas fa-heart hover-icon">
-         </i></div>
+         </i></span>
          </div>
       </article> 
                 
@@ -125,9 +134,9 @@
                 </figure>
                  <div class="descriptif_restaurant"><h4>Le délice des sens</h4>
                   <h5>Folie-Méricourt</h5> 
-                 <div class="like">
+                 <span class="like">
                         <i class="far fa-heart default-icon"></i>
-                        <i class="fas fa-heart hover-icon"> </i></div>
+                        <i class="fas fa-heart hover-icon"> </i></span>
                         </div>
                  </article> 
             </div>
@@ -135,32 +144,28 @@
       </main>   
 
       <footer>
-        <div class="menu_footer">
-          <div class="logo_footer">
-            <img src="images/logo/ohmyfood@2x.svg" alt="logo footer">
-                 </div>
-            <div class="lien_footer">
-              <ul class="liens">
+            <h3>ohmyfood</h3>
+                 
+            <nav class="lien_footer">
                 <li>
-                  <a href="#">
-                    <i class="fa-solid fa-utensils footer-icons">
-                    </i>Proposer un restaurant</a>
+                  <a id="liens_footer" href="#" >
+                    <i class="fas fa-utensils footer-icons">
+                    </i> Proposer un restaurant</a>
                 </li>
                
                 <li>
-                  <a href="#">
+                  <a id="liens_footer" href="#">
                     <i class="fas fa-hands-helping footer-icons">
-                    </i>Devenir partenaire</a>
+                    </i> Devenir partenaire</a>
                 </li>
                
                 <li>
-                  <a href="#">Mentions légales</a>
+                  <a id="liens_footer" href="#">Mentions légales</a>
                 </li>
                 <li>
-                  <a href="mailto:test@test.local">Contact</a>
+                  <a id="liens_footer" href="mailto:test@test.local">Contact</a>
                 </li>
-              </ul>
-            </div>
+          </nav>
           </div>
         </footer>    
        </body>

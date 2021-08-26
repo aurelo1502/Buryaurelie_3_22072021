@@ -22,7 +22,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
   margin-top: 10px;
   }
   
@@ -35,17 +34,18 @@ header_logo img{
     box-sizing: inherit;
 }
   
-.localisation {
-  display: block;
-  align-items: center;
+localisation {
+    display: block;
+  /* align-items: center; */
   position: relative;
   margin: auto;
-  width: 200px;
+  width: -webkit-fill-available;
+  border
 }
 
   
 .localisation i {
-    position: absolute;
+    position: inherit;
 }
   
 a:-webkit-any-link {
@@ -61,6 +61,7 @@ img, video {
 
 div {
     display: block;
+    margin-left: 3px;
   }
   
 .localisation .icones{
@@ -94,18 +95,19 @@ i {
 }
 
 
-button, textarea, select {
+button, input, select {
     margin: 0;
 }
 *, *::before, *::after {
     box-sizing: inherit;
 }
 
-textarea [type="text" i] {
-    padding: 1px 2px;
-}
+input {
+    border-style: hidden;
+    background-color: #EAEAEA;
+ }
 
-.textarea {
+form {
     -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
     color: -internal-light-dark(black, white);
@@ -115,18 +117,17 @@ textarea [type="text" i] {
     text-indent: 0px;
     text-shadow: none;
     display: inline-block;
-    text-align: start;
+    text-align: center;
     appearance: auto;
-    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
-    -webkit-rtl-ordering: logical;
+    background-color:#EAEAEA;
     cursor: text;
-    margin: 0em;
+    margin: auto;
     font: 400 13.3333px Arial;
     padding: 1px 2px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
+    border-width: 20px;
+    border-style:solid;
+    border-color: #EAEAEA;
+    width: -webkit-fill-available;
 }
 
 main {
@@ -148,16 +149,8 @@ article {
     display: block;
 }
 
-.titres_reservation{
-    margin-bottom: 35px;
-}
-
 p {
     display: block;
-}
-
-.titres_reservation h1 {
-    margin-bottom: 15px;
 }
 
 .titres_reservation h2, .titres_reservation h1 {
@@ -173,8 +166,8 @@ h2, h3, h4, h5, h6 {
 }
 
 
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
-margin: 0;
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, input, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+margin: 0.5px;
 padding: 0;
 }
 
@@ -356,9 +349,7 @@ figcaption {
   }
 
   .descriptif_restaurant {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    display: block;
     width: auto;
     margin-top: auto;
   }
@@ -388,16 +379,15 @@ figcaption {
 }
 
 
-.like {
-  position: relative;
-  margin-right: 22px;
-  margin-top: 4px;
-}
 .like i {
-  color: #9d9d9d;
-  font-size: 24px;
-  left: 50%;
+    color: #9d9d9d;
+    font-size: 24px;
+    margin-right: 22px;
+    margin-bottom: 25px;
+    float: right;
+    position:relative;
 }
+
 .like .hover-icon {
   left: 0;
   opacity: 0;
@@ -420,21 +410,34 @@ figcaption {
   opacity: 0;
 }
 
-footer a {
-    text-decoration: none;
-    color: #fff;
+.menu_footer {
+    background-color: #323232;
+    padding: 10px
   }
   
-  .footer {
+  li {
+    list-style-type: none;
+  }
+  
+footer {
     background: #333;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     color: #fff;
-  }
-  .logo_footer {
-    filter: invert(1);
-    max-width: 150px;
-  }
+    }
+
+footer h3 {
+    font-family: "Shrikhand";
+    font-size: x-large; 
+    color: #FFFFFF;
+    padding-bottom: 1.1rem;
+}
+
+#liens_footer {
+    color: #fff;
+}
+
+
   @media only screen and (min-width: 765px) {
     .logo_footer {
       max-width: none;

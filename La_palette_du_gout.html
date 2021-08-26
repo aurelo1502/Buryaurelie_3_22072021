@@ -1,175 +1,198 @@
 <!DOCTYPE html>
-<html>
-    <!DOCTYPE html>
-    <html lang="fr">
-      <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>La palette du goût</title>
-        <meta
-          name="description"
-          content="OhMyFood Réservez le menu qui vous convient"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="shortcut icon"
-          href="images/logo/ohmyfood@2x.svg"
-          type="image/x-icon"
-        />
-        <link rel="stylesheet" href="public/css/style.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-          integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
-          crossorigin="anonymous"
-        />
-      </head>
+<html lang="fr">
+  <head>
+<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles_pages.css" rel="stylesheet" type="text/css">
+    <script
+      src="https://kit.fontawesome.com/a1b7585f85.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="images/logo/ohmyfood@2x.svg"
+      type="image/x-icon"
+    />
+    <style type="text/css"> 
+      a:link 
+      { 
+       text-decoration:none; 
+      } 
+      </style>
+    <title>La palette du goût</title>
+  </head>
 
     <body class="menu" cz-shortcut-listen="true">
     
     <header class="menu_header">
         <div class="logo_header">
           <a href="index.html" class="back_icon">
-            <i class="fas fa-arrow-left"></i>
-          </a>
-         
+            <i class="fas fa-arrow-left" aria-hidden="true">
+            </i>
+        </a> 
           <a href="#">
             <img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood logo"/>
           </a>
         </div>
-        <figure>
-        <img class="header_img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash" alt="la palette du gout"/>
+        <figure class="header_img">
+        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût"/>
     </figure>
       </header>
       
     <main>
         <div class="menus">
         <h1 class="titres_menus">La palette du goût</h1>
-        <div class="like">
+        <span class="like">
             <i class="far fa-heart default-icon"></i>
             <i class="fas fa-heart hover-icon"></i>
+            </span>
         </div>
-    </div>
 
     <section class="menus_details">
         
-      <div class="entrees">
+    <article class="entrees">
         <h2>ENTRÉES</h2>
+        <div class="entree_1">
           <p><strong>Fricassée d'escargot</strong><br>
             Au piment d'espelette</p>
           <div class="prix">
           <span>25€</span>
+          </div>
+          <div class="checkbox">
             <i class="fas fa-check-circle btn-circle"></i>
           </div>
+        </div>
           
-          <p><strong>Foie gras de canard mi-            cuit</strong><br>
+        <div class="entree_2">
+          <p><strong>Foie gras de canard mi-cuit</strong><br>
             Et ses copeaux de truffe noire</p>
           <div class="prix">
           <span>35€</span>
+          </div>
+          <div class="checkbox">
             <i class="fas fa-check-circle btn-circle"></i>
           </div>
+        </div>
           
+        <div class="entree_3">
           <p><strong>Oeuf au plat</strong><br>
             Assaisonné à la truffe sur lit de...</p>
           <div class="prix">
           <span>20€</span>
+          <div class="checkbox">
             <i class="fas fa-check-circle btn-circle"></i>
           </div>
+        </div>
+      </div>
+    </article>
         
-        <div class="plats">
+    <article class="plats">
         <h2>PLATS</h2>
+        <div class="plat_1">
           <p><strong>Filet de boeuf aux herbes</strong><br>
             Accompagné de sa ribambelle de légu...</p>
           <div class="prix">
           <span>40€</span>
+          <div class="checkbox">
             <i class="fas fa-check-circle btn-circle"></i>
           </div>
-          
+        </div>
+      </div>
+
+        <div class="plat_2"> 
           <p><strong>Parmentier de queue de boeuf</strong><br>
             À la truffe noire sur sa purée de panais</p>
           <div class="prix">
           <span>35€</span>
+          <div class="checkbox">
             <i class="fas fa-check-circle btn-circle"></i>
           </div>
+        </div>
+    </div>
           
+        <div class="plat_3">
           <p><strong>Filet de turbot</strong><br>
             Aux agrumes</p>
           <div class="prix">
           <span>44€</span>
+          <div class="checkbox">
             <i class="fas fa-check-circle btn-circle"></i>
           </div>
+        </div>
+    </div>
+</article>
           
-          <div class="desserts">
+    <article class="desserts">
         <h2>DESSERTS</h2>
+        <div class="dessert_1">
           <p><strong>Paris-Brest</strong><br>
             Revisité</p>
           <div class="prix">
           <span>18€</span>
+          <div class="checkbox">
             <i class="fas fa-check-circle btn-circle"></i>
           </div>
-          
+        </div>
+    </div>
+        <div class="dessert_2">
           <p><strong>Macaron au chocolat d'exception</strong><br>
             Et glace à la vanille de Madagascar</p>
           <div class="prix">
           <span>22€</span>
+          <div class="checkbox">
             <i class="fas fa-check-circle btn-circle"></i>
           </div>
-          
+        </div>
+    </div>        
+        <div class="dessert_3">  
           <p><strong>Mousse au chocolat</strong><br>
             Au piment d'espelette et à la truffe noire</p>
           <div class="prix">
           <span>23€</span>
+          <div class="checkbox">
             <i class="fas fa-check-circle btn-circle"></i>
           </div>
        </div>
+    </div>
+</article>
        <div class="btn_commander">
         <a href="btn_commander">Commander</a>
     </div>
    </section>
+</main>
 
-   <footer>
-
-    <div class="menu_footer">
-      <div class="logo_footer">
-        <img src="images/logo/ohmyfood@2x.svg" alt="logo footer">
-             </div>
-        <div class="lien_footer">
-          <ul class="liens">
-            <li>
-              <a href="#">
-                <i class="fa-solid fa-utensils footer-icons">
-                </i>Proposer un restaurant</a>
-            </li>
-           
-            <li>
-              <a href="#">
-                <i class="fas fa-hands-helping footer-icons">
-                </i>Devenir partenaire</a>
-            </li>
-           
-            <li>
-              <a href="#">Mentions légales</a>
-            </li>
-            <li>
-              <a href="mailto:test@test.local">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>    
-   </body>
-  </html>
+<footer>
+  <h3>ohmyfood</h3>
+       
+  <nav class="lien_footer">
+      <li>
+        <a id="liens_footer" href="#" >
+          <i class="fas fa-utensils footer-icons">
+          </i> Proposer un restaurant</a>
+      </li>
+     
+      <li>
+        <a id="liens_footer" href="#">
+          <i class="fas fa-hands-helping footer-icons">
+          </i> Devenir partenaire</a>
+      </li>
+     
+      <li>
+        <a id="liens_footer" href="#">Mentions légales</a>
+      </li>
+      <li>
+        <a id="liens_footer" href="mailto:test@test.local">Contact</a>
+      </li>
+</nav>
+</div>
+</footer>    
+</body>
+</html>
 
     
 
