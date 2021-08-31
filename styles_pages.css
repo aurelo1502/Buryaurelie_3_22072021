@@ -123,6 +123,7 @@ header .back_icon {
 
 .fa, .fas {
     font-weight: 900;
+    width: 5%;
 }
 
 .fa, .far, .fas {
@@ -193,11 +194,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .like {
-    position: absolute;
-    right: 30px;
-    top: 20px;
-    margin-right: 22px;
-    margin-top: 4px;
+    position: relative;
+    left: 24rem;
+    bottom: 2.62rem;
 }
 
 .like i {
@@ -270,11 +269,22 @@ p {
 
 
 
-.entree_1, .entree_2, .entree_3, .plat_1, .plat_2, .plat_3, .dessert_1, .dessert_2, .dessert_3 {
+.entree_1, .entree_2, .entree_3, .entree_4, .plat_1, .plat_2, .plat_3, .dessert_1, .dessert_2, .dessert_3 {
     display: flex;
-    width: auto;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+    /* margin-top: 25px; */
+    margin: 10px 0;
+    flex: 1 0 33%;
+    overflow: hidden;
+}
+
+.prix {
+  margin: 1.7rem;
+  font-weight: bold
 }
 
 .checkbox {
@@ -347,3 +357,4 @@ footer h3 {
 }
 
 
+  

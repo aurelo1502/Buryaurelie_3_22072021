@@ -70,6 +70,7 @@ div {
 
 .fa, .fas {
       font-weight: 900;
+      width: 5%;
   }
 
 .fa, .far, .fas {
@@ -354,8 +355,16 @@ figcaption {
     margin-top: auto;
   }
 
-  .descriptif_restaurant h4 {
-      font-weight: bold;
+  .cartes h4 {
+      font-weight: bolder;
+  }
+
+  h4, h5 {
+    margin-left: 0.5rem;
+  }
+
+  p {
+    padding: 0.2rem;
   }
 
   .btn_reservation {
@@ -379,13 +388,41 @@ figcaption {
 }
 
 
+.like {
+  position: relative;
+  height: 1.50rem;
+  width: 1.50rem;
+  display: flex;
+  left: 85%;
+  top: auto;
+  bottom: 2.6rem;
+}
+
 .like i {
-    color: #9d9d9d;
-    font-size: 24px;
-    margin-right: 22px;
-    margin-bottom: 25px;
-    float: right;
-    position:relative;
+  color: #9d9d9d;
+  float: right;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  font-size: 1.8em;
+  display: flex;
+}
+
+.default-icon {
+    transition: all 0.5s;
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke-width: 0.08rem;
+   background: -webkit-linear-gradient(top right, #9356dc 30%, #ff79da 70%);
+   background-repeat: no-repeat;
+   -webkit-background-clip: text;
+   background-size: 100% 0;
+   background-position: 100% 100%;
+   font-weight: bold;
+}
+
+.default-icon:hover {
+   background-size: 100% 100%;
+   -webkit-text-stroke-color: transparent;
 }
 
 .like .hover-icon {
@@ -393,6 +430,7 @@ figcaption {
   opacity: 0;
   position: absolute;
 }
+
 .like .hover-icon:hover {
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-text-fill-color: transparent;
@@ -401,14 +439,6 @@ figcaption {
   z-index: 999;
 }
 
-.like:hover {
-  cursor: pointer;
-  overflow: hidden;
-  opacity: 1;
-}
-.like .default-icon:hover {
-  opacity: 0;
-}
 
 .menu_footer {
     background-color: #323232;
@@ -756,9 +786,6 @@ article a {
   }
 }
   
-  
-
-
 
 
 
