@@ -1,360 +1,387 @@
-@charset "UTF-8";
-/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-html,
-body,
-p,
-ol,
-ul,
-li,
-dl,
-dt,
-dd,
-blockquote,
-figure,
-fieldset,
-legend,
-textarea,
-pre,
-iframe,
-hr,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-
-ul {
-  list-style: none;
-}
-
-button,
-input,
-select {
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-body {
-    background-color: #fff;
-    color: #333;
-    font-family: Roboto, sans-serif;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    margin: 0;
-    text-align: left;
-    overflow-x: hidden;
-  }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-img,
-video {
-  height: auto;
-  max-width: 100%;
-}
-
-header {
-    display: block;
-}
-
-.menu_header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #e9e9e9;
-  }
-
-.logo_header {
-    background: white;
-    width: 160%;
-    text-align: center;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-    border-bottom: 2px solid #f4f4f4;
-    padding: 5px 46px;
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+    margin : 0;
+    padding : 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    font-size : 100%;
+    font-weight : normal;
+    }
+    ul {
+    list-style : none;
+    }
+    button, input, select {
+    margin : 0;
+    }
+    html {
+    box-sizing : border-box;
+    overflow-x : hidden;
+    }
+    body {
+    background-color : #fff;
+    color : #333;
+    font-family : Roboto, sans-serif;
+    font-size : 0.875rem;
+    line-height : 1.5;
+    margin : 0;
+    text-align : left;
+    overflow-x : hidden;
+    }
+    *, *::before, *::after {
+    box-sizing : inherit;
+    }
+    img, video {
+    height : auto;
+    max-width : 100%;
+    }
+    header {
+    display : block;
+    }
+    .menu_header {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    background-color : #e9e9e9;
+    }
+    .logo_header {
+    background : white;
+    width : 160%;
+    text-align : center;
+    box-shadow : 0 1px 4px rgb(0, 0, 0, 0.3);
+    border-bottom : 2px solid #f4f4f4;
+    padding : 5px 46px;
+    }
+    .header__logo img {
+    height : 50px;
+    width : 160px;
+    }
+    .logo_header {
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
+    flex-flow : column;
+    background : white;
+    width : 160%;
+    text-align : center;
+    box-shadow : 0 1px 4px rgb(0 0 0 / 30%);
+    border-bottom : 2px solid #f4f4f4;
+    padding : 5px 46px;
+    }
+    header .back_icon {
+    display : block;
+    margin-right : 275px;
+    position : absolute;
+    left : 25px;
+    color : #000;
+    }
+    .fa, .fas {
+    font-weight : 900;
+    color: #fff;
     }
 
-.header__logo img {
-        height: 50px;
-        width: 160px;
-      }
+    .fa, .far, .fas {
+    font-family : "Font Awesome 5 free";
+    }
+    .fa, .fab, .fad, .fal, .far, .fas {
+    display : inline-block;
+    font-style : normal;
+    font-variant : normal;
+    text-rendering : auto;
+    line-height : 1;
+    }
+    *, *::before, *::after {
+    box-sizing : inherit;
+    }
+    header .header_img {
+    width : 100%;
+    }
+    header .header_img img {
+    height : 15rem;
+    object-fit : cover;
+    width : 100%;
+    }
+    .menus {
+    border-top-left-radius : 20px;
+    border-top-right-radius : 35px;
+    margin-top : 1rem;
+    z-index : 999;
+    background-color : #f6f6f6;
+    }
+    .main {
+    background : #f6f6f6;
+    }
+    main {
+    display : flex;
+    flex-flow : column nowrap;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : -50px;
+    max-width : 1440px;
+    }
+    .titres_menus {
+    font-family : "Shrikhand", cursive;
+    font-weight : normal;
+    text-align : left;
+    padding : 20px 0 20px 20px;
+    }
+    h1 {
+    line-height : 1;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    font-size : 25px;
+    font-weight : normal;
+    }
+    .like .default-icon:hover, .like:hover, .like .hover-icon:hover {
+    transition: 1s 0s ease;
+    }
 
-.logo_header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: column;
-    background: white;
-    width: 160%;
-    text-align: center;
-    box-shadow: 0 1px 4px rgb(0 0 0 / 30%);
-    border-bottom: 2px solid #f4f4f4;
-    padding: 5px 46px;
-}
-
-header .back_icon {
-    display: block;
-    margin-right: 275px;
-    position: absolute;
-    left: 25px;
-    color: #000;
-}
-
-.fa, .fas {
-    font-weight: 900;
-    width: 5%;
-}
-
-.fa, .far, .fas {
-font-family: "Font Awesome 5 free"
-}
-
-.fa, .fab, .fad, .fal, .far, .fas {
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-} 
-
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
-header .header_img {
-    height: -webkit-fill-available;
-    width: 100%;
-}
-
-header .header_img img{
-    height: 15rem;
-    object-fit: cover;
-    width: 100%;
-}
-
-.menus {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 35px;
-    margin-top: 1rem;
-    z-index: 999;
-    background-color: #f6f6f6;
-}
-
-.main {
-    background: #f6f6f6;
-}
-
-main {
-    display: flex;
-    flex-flow: column nowrap;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -50px;
-    max-width: 1440px;
-}
-
-
-.titres_menus {
-    font-family: "Shrikhand", cursive;
-    font-weight: normal;
-    text-align: left;
-    padding: 20px 0 20px 20px;
-}
-
-h1 {
-    font-size: : 1.5em;
-    line-height: 1;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-size: 25px;
-    font-weight: normal;
-}
-
-.like {
-    position: relative;
-    left: 24rem;
-    bottom: 2.62rem;
-}
-
-.like i {
+    .like {
+     position: relative;
+     left: 24rem;
+     bottom: 2.81rem;
+     }
+  
+    .like i {
     color: #9d9d9d;
     font-size: 24px;
     left: 50%;
-}
-
-.like .hover-icon {
+    }
+    .like .hover-icon {
     left: 0;
+    right: 0;
     opacity: 0;
     position: absolute;
-}
-
-.menu_details {
-    padding: 20px;
-}
-
-section {
-    display: block;
-}
-
-div {
-    display: block;
-    background-color: #f6f6f6;
-}
-
-.sous_titre {
-    margin: 25px 0;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-h2 {
-    display: block;
-    font-size: 15px;
-    color: #919191;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0.7rem;
-    margin-inline-end: 0px;
-    font-weight: normal;
-}
-
-h2:after {
-    content: "";
-    border-bottom: 2px solid #99e2d0;
-    display: block;
-    padding-top: 3px;
-    width: 40px;
-}
-
-article {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    background: #f6f6f6;
-    cursor: pointer;
-    /* margin-top: 25px; */
-    margin-left:auto;
-    flex: 1 0 33%;
-    overflow: hidden;
-}
-
-p {
-    display: block;
-    width: 80%;
-    padding: 10px;
-}
-
-
-
-.entree_1, .entree_2, .entree_3, .entree_4, .plat_1, .plat_2, .plat_3, .dessert_1, .dessert_2, .dessert_3 {
-    display: flex;
-    justify-content: space-between;
-    background: #fff;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px 0 #c3c3c3;
-    /* margin-top: 25px; */
-    margin: 10px 0;
-    flex: 1 0 33%;
-    overflow: hidden;
-}
-
-.prix {
-  margin: 1.7rem;
-  font-weight: bold
-}
-
-.checkbox {
-    display: none;
-    width: 30%;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.entrees .plats .desserts .btn-circle {
-    font-size: 24px;
-    color: #fff;
-    transform: rotate(360deg);
-}
-
-.btn_commander a {
-    margin-top: 25px;
-    width: 60%;
-    display: inline-block;
-    position: relative;
+    }
+    .like .hover-icon:hover {
     background: linear-gradient(#ff79da, #9356dc);
-    text-decoration: none;
-    cursor: pointer;
-    border: 0;
-    text-align: center;
-    border-radius: 25px;
-    font-size: 15px;
-    color: #fff;
-    box-shadow: 0 5px 15px 0 #c3c3c3;
-    font-weight: bold;
-    margin: 0 0.3em 0.3em 0;
-    padding: 15px 30px;
-    transition: 0.2s;
-    left: 5.62rem;
-}
-
-.btn_commander {
-  padding: 2rem;
-}
-
-footer {
-    display: block;
-}
-
-.menu_footer {
-    background-color: #323232;
-    padding: 10px
-  }
-  
-  li {
-    list-style-type: none;
-  }
-  
-footer {
-    background: #333;
-    padding: 20px;
-    text-align: left;
-    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    opacity: 1;
+    }
+    .like:hover {
+     cursor: pointer;
+     overflow: hidden;
+     opacity: 1;
+     }
+    .like .default-icon:hover {
+     opacity: 0;
     }
 
-footer h3 {
-    font-family: "Shrikhand";
-    font-size: x-large; 
-    color: #FFFFFF;
-    padding-bottom: 1.1rem;
+    .menu_details {
+    padding : 20px;
+    }
+    section {
+    display : block;
+    }
+    div {
+    display : block;
+    background-color : #f6f6f6;
+    }
+    .sous_titre {
+    margin : 25px 0;
+    font-size : 18px;
+    text-transform : uppercase;
+    }
+    h2 {
+    display : block;
+    font-size : 15px;
+    color : #919191;
+    margin-block-start : 0.83em;
+    margin-block-end : 0.83em;
+    margin-inline-start : 0.7rem;
+    margin-inline-end : 0;
+    font-weight : normal;
+    }
+    h2:after {
+    content : "";
+    border-bottom : 2px solid #99e2d0;
+    display : block;
+    padding-top : 3px;
+    width : 40px;
+    }
+    article {
+    display : flex;
+    justify-content : space-around;
+    flex-direction : column;
+    background : #f6f6f6;
+    cursor : pointer;
+    margin-left : auto;
+    flex : 1 0 33%;
+    overflow : hidden;
+    }
+    p {
+    display : block;
+    width : 80%;
+    padding : 10px;
+    }
+    .entree, .plat, .dessert {
+    display : flex;
+    justify-content : space-between;
+    background : #fff;
+    border-radius : 20px;
+    cursor : pointer;
+    box-shadow : 0 5px 15px 0 #c3c3c3;
+    margin : 10px 0;
+    flex : 1 0 33%;
+    overflow : hidden;
+    }
+    .prix {
+    margin : 1.7rem;
+    font-weight : bold;
+    }
+    .checkbox {
+    display: none;
+    width : 30%;
+    border-bottom-right-radius : 15px;
+    border-top-right-radius : 15px;
+    background-color : #99e2d0;
+    animation: checkbox ease 0.2s;
+    }
+
+    .checkbox i {
+        color: white;
+        font-size: x-large;
+        transform: rotate(360deg);
+        transition: transform 0.3s;
+    }
+
+    .checkbox i:hover{
+       transform: rotate(0deg);
+    }
+
+    .entrees .plats .desserts .btn-circle {
+    font-size : 24px;
+    color : #fff;
+    }
+    
+    .btn-circle {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    border-radius: 10rem;
+    }
+    
+      
+    .entree:hover .checkbox {
+        display: block;
+        flex: 0 0 15%;
+        background: #99e2d0;
+        width: auto;
+        overflow: hidden;
+      }
+      
+    .entree:hover .btn-circle {
+        position: absolute;
+        padding: 1.7rem; 
+        background: #99e2d0; 
+     }
+      
+    .plat:hover .checkbox {
+        display: block;
+        flex: 0 0 15%;
+        background: #99e2d0;
+        width: auto;
+        overflow: hidden;
+      }
+      
+    .plat:hover .btn-circle {
+        position: absolute;
+        padding: 1.7rem; 
+        background: #99e2d0;
+     }
+    
+      
+    .dessert:hover .checkbox {
+        display: block;
+        flex: 0 0 15%;
+        background: #99e2d0;
+        width: auto;
+        overflow: hidden;
+      }
+      
+    .dessert:hover .btn-circle {
+        position: absolute;
+        padding: 1.7rem; 
+        background: #99e2d0;
+     }
+
+    .btn_commander a {
+    margin-top : 25px;
+    width : 60%;
+    display : inline-block;
+    position : relative;
+    background : linear-gradient(#ff79da, #9356dc);
+    text-decoration : none;
+    cursor : pointer;
+    border : 0;
+    text-align : center;
+    border-radius : 25px;
+    font-size : 15px;
+    color : #fff;
+    box-shadow : 0 5px 15px 0 #c3c3c3;
+    font-weight : bold;
+    margin : 0 0.3em 0.3em 0;
+    padding : 15px 30px;
+    transition : 0.2s;
+    left : 5.62rem;
+    }
+    .btn_commander {
+    padding : 2rem;
+    }
+    footer {
+    display : block;
+    }
+    .menu_footer {
+    background-color : #323232;
+    padding : 10px;
+    }
+    li {
+    list-style-type : none;
+    }
+    footer {
+    background : #333;
+    padding : 20px;
+    text-align : left;
+    color : #fff;
+    }
+    a:link {
+    text-decoration : none;
+    }
+    footer h3 {
+    font-family : "Shrikhand";
+    font-size : x-large;
+    color : #FFFFFF;
+    padding-bottom : 1.1rem;
+    }
+    #liens_footer {
+    color : #fff;
+    }
+
+/*Animation du checkbox */
+@keyframes checkbox {
+  0% {
+    transform: translate(50px, 0);
+  }
+  20% {
+    transform: translate(30px, 0);
+  }
+  40% {
+    transform: translate(20px, 0);
+  }
+  60% {
+    transform: translate(15px, 0);
+  }
+  80% {
+    transform: translate(7px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
 }
 
-#liens_footer {
-    color: #fff;
-}
+
+
+
+
 
 
   
