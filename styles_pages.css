@@ -75,9 +75,9 @@ html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, tex
     }
     .fa, .fas {
     font-weight : 900;
-    color: #fff;
+    color: black;
     }
-
+  
     .fa, .far, .fas {
     font-family : "Font Awesome 5 free";
     }
@@ -133,7 +133,7 @@ html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, tex
     .like .default-icon:hover, .like:hover, .like .hover-icon:hover {
     transition: 1s 0s ease;
     }
-
+  
     .like {
      position: relative;
      left: 24rem;
@@ -165,7 +165,7 @@ html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, tex
     .like .default-icon:hover {
      opacity: 0;
     }
-
+  
     .menu_details {
     padding : 20px;
     }
@@ -204,10 +204,25 @@ html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, tex
     flex-direction : column;
     background : #f6f6f6;
     cursor : pointer;
+    height: auto;
     margin-left : auto;
     flex : 1 0 33%;
     overflow : hidden;
     }
+  
+    .entree {
+      animation: fadeIn 0.5s;
+    }
+    
+    .plat {
+      animation: fadeIn 0.5s;
+    }
+  
+    .dessert {
+      animation: fadeIn 0.5s;
+    }
+    
+  
     p {
     display : block;
     width : 80%;
@@ -236,18 +251,18 @@ html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, tex
     background-color : #99e2d0;
     animation: checkbox ease 0.2s;
     }
-
+  
     .checkbox i {
         color: white;
         font-size: x-large;
         transform: rotate(360deg);
         transition: transform 0.3s;
     }
-
+  
     .checkbox i:hover{
        transform: rotate(0deg);
     }
-
+  
     .entrees .plats .desserts .btn-circle {
     font-size : 24px;
     color : #fff;
@@ -303,7 +318,7 @@ html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, tex
         padding: 1.7rem; 
         background: #99e2d0;
      }
-
+  
     .btn_commander a {
     margin-top : 25px;
     width : 60%;
@@ -355,9 +370,9 @@ html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, tex
     #liens_footer {
     color : #fff;
     }
-
-/*Animation du checkbox */
-@keyframes checkbox {
+  
+  /*Animation du checkbox */
+  @keyframes checkbox {
   0% {
     transform: translate(50px, 0);
   }
@@ -376,7 +391,13 @@ html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, tex
   100% {
     transform: translate(1px, 0);
   }
-}
+  }
+  
+  /*animation menu pages*/
+   @keyframes fadeIn {
+    0% {margin-top: 100%;}
+    100% {margin-top: 0%;}
+    }
 
 
 
