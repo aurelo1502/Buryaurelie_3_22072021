@@ -1,0 +1,569 @@
+/*colors*/
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99E2D0;
+$darkgreen: #217460;
+$white: #fff;
+$grey: #EAEAEA;
+$darkgrey: #888;
+$lightgrey: #E5E5E5;
+$reservation: #f4f4f4;
+$black: #333;
+$lightpink:#F4E7FF;
+$footer: #323232;
+/*fonts*/
+$text: 'Roboto', sans-serif;
+$font: "Shrikhand";
+$font_icon:"Font Awesome 5 free";
+
+
+body {
+    background-color: $white;
+    color: $black;
+    font-family: $text;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: left;
+    overflow-x: hidden;
+  }
+  
+  /*********Loader************/
+  
+  .loader_page {
+    background-color: $tertiary;
+    height: 1400px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    animation: loader 1 3000ms;
+    animation-delay: 1s;
+    -webkit-animation: loader 1 3000ms;
+    animation-fill-mode: both;
+    overflow: nowrap;
+    h3{
+        font-family: $font;
+        font-size: 50px;
+        padding-top: 80px;
+        text-align: center;
+        color: $white;
+    }
+}
+    
+  .cs-loader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .cs-loader-inner {
+    transform: translateY(-50%);
+    top: 20%; 
+    position: absolute;
+    width: calc(100% - 200px);
+    color: $white;
+    text-align: center;
+    padding: 100px 100px;
+    vertical-align: middle;
+    label {
+    font-size: 50px;
+    opacity: 0;
+    display:inline-block;
+  }
+}
+.cs-loader-inner label:nth-child(6) {
+  -webkit-animation: circles 3s 1 ease-in-out  ;
+  animation: circles 3s 1 ease-in-out  ;
+}
+.cs-loader-inner label:nth-child(5) {
+  -webkit-animation: circles 3s 100ms ease-in-out  ;
+  animation: circles 3s 1 ease-in-out  ;
+}
+
+.cs-loader-inner label:nth-child(4) {
+  -webkit-animation: circles 3s 200ms 1 ease-in-out;
+  animation: circles 3s 100ms 1 ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(3) {
+  -webkit-animation: circles 3s 300ms 1 ease-in-out;
+  animation: circles 3s 200ms 1 ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(2) {
+  -webkit-animation: circles 3s 400ms 1 ease-in-out;
+  animation: circles 3s 300ms 1 ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(1) {
+  -webkit-animation: circles 3s 500ms 1 ease-in-out;
+  animation: circles 3s 400ms 1 ease-in-out;
+}
+    
+  /*----------header-----------*/
+  
+  header__logo {
+    background: $white;
+    width: 160%;
+    text-align: center;
+    box-shadow: 0 1px 4px $white/ 30%;
+    border-bottom: 2px solid $grey;
+    padding: 5px 46px;
+    img{
+      height: 50px;
+      width: 160px;
+    }
+  }
+  header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  localisation {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: -webkit-fill-available;
+  }
+  
+  
+  .localisation i {
+    position: inherit;
+    padding: 8px 10px;
+  }
+  
+  a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  img, video {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  div {
+    display: block;
+    margin-left: 3px;
+  }
+  
+  .fa, .far, .fas {
+      font-family: $font_icon;
+      font-weight: 900;
+      width: 5%;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+  }
+  
+  button, input, select {
+    margin: 0;
+  }
+  
+  input {
+    border-style: hidden;
+    font-weight: bold;
+    font-size:larger;
+    background-color: $grey;
+  }
+  
+  form {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark($black, $white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    appearance: auto;
+    background-color: $lightgrey;
+    cursor: text;
+    margin: auto;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 20px;
+    border-style:solid;
+    border-color: $lightgrey;
+    width: -webkit-fill-available;
+  }
+  
+  main {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+  }
+  
+  .reservation {
+    flex: 100%;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    background-color: $reservation;
+  }
+  
+  article {
+    display: block;
+    a{
+      text-decoration: none;
+    }
+  }
+  
+  .titres_reservation h2, .titres_reservation h1 {
+    font-family: $font;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  
+  h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+  }
+  
+  
+  html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, input, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0.5px;
+  }
+  
+  h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  
+  .reservation h2 {
+    font-size: 15px;
+    font-weight: normal;
+    color: $darkgrey;
+  }
+  
+  a.btn_reservation {
+    display: inline-block;
+    background: linear-gradient($secondary, $primary);
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 15px;
+    color: $white;
+    box-shadow: 0 5px 15px 0 $darkgrey;
+    font-weight: bold;
+    margin: 0 0.3em 0.3em 0;
+    padding: 15px 30px;
+    &:hover{
+    background: linear-gradient(#f77dd4, #ab65fa);
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+  }
+  }
+
+  .btn_reservation {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    background: $tertiary;
+    padding: 3px 10px;
+    font-weight: bold;
+    }
+  
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px 5px;
+  }
+  
+  aside {
+    display: block;
+  }
+  
+  .fonctionnement h2{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $text;
+    margin-bottom: 15px;
+  }
+  
+  .aside_etapes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .btn_aside {
+    flex: 1 0 auto;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background: $grey;
+    border-radius: 30px;
+    text-align: justify;
+    margin-left: 0;
+    font-size: 12px;
+    font-family: $text;
+    color:$black;
+    font-weight: bold;
+    padding: 20px 15px;
+    box-shadow: 0 5px 15px 0 $darkgrey;
+    &:hover{
+      background: $lightpink;}
+    }
+
+  .aside_numero {
+    position: absolute;
+    left: 12px;
+    background: $primary;
+    border-radius: 100%;
+    color: $white;
+    height: 25px;
+    width: 8px;
+    line-height: 1.67;
+    padding: 2px 10px;
+    font-weight: bold;
+  }
+  
+  .aside_icones {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: $darkgrey;
+    margin: 0 20px 0 25px;
+    position: absolute;
+    font-size: 20px;
+  }
+  
+  i {
+    font-style: italic;
+  }
+  
+  .aside_texte {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 14px;
+    color: $black;
+  }
+  
+  section {
+    display: block;
+  }
+  
+  .restaurants {
+    background-color: $grey;
+    padding: 10px;
+    margin-top: 15px;
+    h2{
+    font-size: 22px;
+    font-family: $text;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: $black;
+    }
+  }
+  
+  .cartes {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    min-width: 0;
+    background: $white;
+    box-shadow: 2px 2px 10px 2px $grey;
+    border-radius: 15px;
+  }
+  
+  .figure_cartes {
+    position: relative;
+    max-height: 200px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  p{
+    display: block;
+    padding: 0.2rem;
+  }
+  
+  img.carte_img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 200px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+  }
+  
+  figcaption {
+    border-radius: 3px;
+    background-color: $tertiary;
+    color: $darkgreen;
+    padding: 5px;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: auto;
+  }
+  
+  .descriptif_restaurant {
+    display: block;
+    width: auto;
+    margin-top: auto;
+  }
+  
+  .cartes h4 {
+      font-weight: bolder;
+  }
+  
+  h4, h5 {
+    margin-left: 0.5rem;
+  }
+  
+  .btn_reservation:hover {
+  background: linear-gradient($secondary, $primary);
+  box-shadow: 0 5px 15px 0 $darkgrey;
+  }
+  
+  .like .default-icon:hover, .like:hover, .like .hover-icon:hover {
+  transition: 0.5s 0s ease;
+  }
+  
+  
+  .like {
+  position: relative;
+  height: 1.50rem;
+  width: 1.50rem;
+  display: flex;
+  left: 85%;
+  top: auto;
+  bottom: 2.6rem;
+    i{
+      color: $darkgrey;
+      float: right;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      font-size: 1.8em;
+      display: flex;
+    }
+  }
+  
+  .default-icon {
+    transition: all 0.5s;
+   background: -webkit-linear-gradient(top right, $primary 30%, $secondary 70%);
+   background-repeat: no-repeat;
+   -webkit-background-clip: text;
+   background-size: 100% 0;
+   background-position: 100% 100%;
+   font-weight: bold;
+   &:hover{
+    background-size: 100% 100%;
+    -webkit-text-stroke-color: transparent;
+   }
+  }
+  
+  .like .hover-icon {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+    &:hover{
+      background: linear-gradient($secondary, $primary);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      opacity: 1;
+      z-index: 999;
+    }
+  }
+  
+  .menu_footer {
+    background-color: $footer;
+    padding: 10px
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  footer {
+    background: $footer;
+    padding: 20px;
+    text-align: left;
+    color: $white;
+    h3{
+    font-family: $font;
+    font-size: x-large; 
+    color: $white;
+    padding-bottom: 1.1rem;
+    }
+    }
+  
+  #liens_footer {
+    color: $white;
+    text-decoration: none;
+  }
+  
+  
+  /*----------------Keyframes-------------*/
+  
+  @-webkit-keyframes circles {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-300px);
+    }
+    33% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+    }
+    66% {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(300px);
+    }
+  }
+  
+  @keyframes loader {
+    0% {
+      opacity: 1;
+      transform: translateX(-300px);
+      z-index: 1;
+      white-space: nowrap;
+    }
+    33% {
+      opacity: 1;
+      transform: translateX(0px);
+      z-index: 1;
+      white-space: nowrap;
+    }
+    66% {
+      opacity: 0.5;
+      transform: translateX(0px);
+      z-index: 1;
+      white-space: nowrap;
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(300px);
+      z-index: 0;
+      white-space: nowrap;
+    }
+  }
