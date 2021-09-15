@@ -233,6 +233,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-size: 17px;
     }
     .entree, .plat, .dessert {
     display: flex;
@@ -414,9 +415,211 @@
     }
 
 
+    @media screen and (min-width: 768px) {
+      section {
+      display : block;
+      }
+      div {
+      display : flex;
+      align-items: center;
+      background-color : #f6f6f6;
+      }
+      .sous_titre {
+      margin : 25px 0;
+      font-size : 18px;
+      }
+      h2 {
+      display: inline;
+      margin-left: 200px;
+      margin-right: auto;
+      font-size : 20px;
+      color : #919191;
+      font-weight : normal;
+      }
+          .like .default-icon:hover, .like:hover, .like .hover-icon:hover {
+  transition: 1s 0s ease;
+  }
+  .like {
+  position: relative;
+  left: 2rem;
+  bottom: 0.1rem;
+   }
+  .like i {
+  color: #9d9d9d;
+  font-size: 24px;
+  left: 50%;
+  }
+  .like .hover-icon {
+  left: 0;
+  right: 0;
+  opacity: 0;
+  position: absolute;
+  }
+  .like .hover-icon:hover {
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  opacity: 1;
+  }
+  .like:hover {
+   cursor: pointer;
+   overflow: hidden;
+   opacity: 1;
+   }
+  .like .default-icon:hover {
+   opacity: 0;
+  }
+      article {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      background: #f6f6f6;
+      cursor: pointer;
+      
+  }
+      .entrees{
+        animation: 0.5s ease 0s fadeIn;
+        -webkit-animation: 0.5s ease 0s fadeIn;
+  }
+      .plats {
+        animation: 0.5s ease 0.5s fadeIn;
+        -webkit-animation: 0.5s ease 0.5s fadeIn;
+  }
+      .desserts {
+        animation: 0.5s ease 1s fadeIn;
+        -webkit-animation: 0.5s ease 1s fadeIn;
+  }
+      p {
+      display : inline-block;
+      width : 100%;
+      height:100%;
+      padding : 5px;
+      margin: auto;
+      white-space: pre-wrap;
+      text-align: center;
+      font-size: 17px;
+      }
+      .entree, .plat, .dessert {
+      display: flex;
+      background: #fff;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px 0 #c3c3c3;
+      margin: 10px 10px 20px 20px;
+      height: auto;
+      width: auto;
+    }
+    .checkbox {
+    display: none;
+    width : 30%;
+    border-bottom-right-radius : 15px;
+    border-top-right-radius : 15px;
+    background-color : #99e2d0;
+    animation: checkbox ease 0.3s;
+    }
+    .checkbox i {
+    color: white;
+    font-size: small;;
+    transform: rotate(360deg);
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+    }
+    .checkbox i:hover{
+       transform: rotate(0deg);
+    }
+    .entrees .plats .desserts .btn-circle {
+    font-size : 18px;
+    color : #fff;
+    }
+    .btn-circle {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    border-radius: 10rem;
+    }  
+    .entree:hover .checkbox {
+    display: block;
+    flex: 0 0 15%;
+    background: #99e2d0;
+    width: auto;
+    overflow: hidden;
+     }
+    .entree:hover .btn-circle {
+        position: absolute;
+        padding: 1.2rem;
+        background: #99e2d0; 
+     }
+    .plat:hover .checkbox {
+        display: block;
+        flex: 0 0 15%;
+        background: #99e2d0;
+        width: auto;
+        overflow: hidden;
+      }
+    .plat:hover .btn-circle {
+        position: absolute;
+        padding: 1.2rem; 
+        background: #99e2d0;
+     }
+    .dessert:hover .checkbox {
+        display: block;
+        flex: 0 0 15%;
+        background: #99e2d0;
+        width: auto;
+        overflow: hidden;
+      }
+    .dessert:hover .btn-circle {
+        position: absolute;
+        padding: 1.2rem; 
+        background: #99e2d0;
+    .btn_commander a {
+          margin-top: 40px;
+          margin-bottom: 40px;
+          width: 60%;
+          display: inline-block;
+          position: relative;
+          background: linear-gradient(#ff79da, #9356dc);
+          text-decoration: none;
+          cursor: pointer;
+          border: 0;
+          text-align: center;
+          border-radius: 25px;
+          font-size: 15px;
+          color: #fff;
+          box-shadow: 0 5px 15px 0 #c3c3c3;
+          font-weight: bold;
+          transition: 0.2s;
+          left: 13rem;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+     }
 
-
-
-
-
+      .btn_commander:hover{
+      background: linear-gradient(#e0c4d8, #e9e9e9);
+      }
+      footer {
+      background: #323232;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    
+    footer h3 {
+      font-family: "Shrikhand";
+      font-size: xxx-large;
+      color: #fff;
+      padding-bottom: 1.1rem;
+    }
+    
+    #liens_footer {
+      color: #fff;
+      text-decoration: none;
+      font-size: large;
+    }
+  }
   
