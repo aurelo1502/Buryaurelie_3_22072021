@@ -38,7 +38,8 @@ body {
     animation-delay: 1s;
     -webkit-animation: loader 1 3000ms;
     animation-fill-mode: both;
-    overflow: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
     h3{
         font-family: $font;
         font-size: 50px;
@@ -181,7 +182,7 @@ body {
   form {
     -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
-    color: -internal-light-dark($black, $white);
+    color: -internal-light-dark(#333, #fff);
     letter-spacing: normal;
     word-spacing: normal;
     text-transform: none;
@@ -189,15 +190,17 @@ body {
     text-shadow: none;
     display: inline-block;
     text-align: center;
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
     appearance: auto;
-    background-color: $lightgrey;
+    background-color: #E5E5E5;
     cursor: text;
     margin: auto;
     font: 400 13.3333px Arial;
     padding: 1px 2px;
     border-width: 20px;
-    border-style:solid;
-    border-color: $lightgrey;
+    border-style: solid;
+    border-color: #E5E5E5;
     width: -webkit-fill-available;
   }
   
@@ -214,6 +217,23 @@ body {
     text-align: center;
     padding: 10px 20px 20px 20px;
     background-color: $reservation;
+        h1{
+        display: block;
+        font-size: 2em;
+        -webkit-margin-before: 0.67em;
+        margin-block-start: 0.67em;
+        -webkit-margin-after: 0.67em;
+        margin-block-end: 0.67em;
+        -webkit-margin-start: 0px;
+        margin-inline-start: 0px;
+        -webkit-margin-end: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        h2{
+        font-size: larger;
+        font-weight: normal;
+        color: $darkgrey;}
+    }
   }
   
   article {
@@ -223,38 +243,29 @@ body {
     }
   }
   
-  .titres_reservation h2, .titres_reservation h1 {
-    font-family: $font;
-    font-size: 25px;
+  .reservation h1{
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+            margin-block-start: 0.67em;
+    -webkit-margin-after: 0.67em;
+            margin-block-end: 0.67em;
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+            margin-inline-end: 0px;
     font-weight: bold;
   }
-  
-  
-  h2, h3, h4, h5, h6 {
-    font-size: 100%;
+           
+  .reservation h2{
+    font-size: larger;
     font-weight: normal;
-  }
-  
-  
+    color: $darkgrey;
+    }
+    
   html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, input, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0.5px;
-  }
-  
-  h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-  }
-  
-  .reservation h2 {
-    font-size: 15px;
-    font-weight: normal;
-    color: $darkgrey;
   }
   
   a.btn_reservation {
@@ -371,14 +382,16 @@ body {
     background-color: $grey;
     padding: 10px;
     margin-top: 15px;
-    h2{
+  }
+
+  h1{
     font-size: 22px;
     font-family: $text;
     font-weight: bold;
     margin-bottom: 18px;
+    margin-left: 10px;
     color: $black;
     }
-  }
   
   .cartes {
     display: flex;
@@ -421,10 +434,8 @@ body {
     width: auto;
   }
   
-  .descriptif_restaurant {
-    display: block;
-    width: auto;
-    margin-top: auto;
+  .descriptif_restaurant p{
+    margin-left: 5px;
   }
   
   .cartes h4 {
@@ -433,7 +444,9 @@ body {
   
   h4, h5 {
     margin-left: 0.5rem;
-  }
+    font-size: 100%;
+    font-weight: normal;
+    }
   
   .btn_reservation:hover {
   background: linear-gradient($secondary, $primary);
@@ -491,29 +504,20 @@ body {
     }
   }
   
-  .menu_footer {
-    background-color: $footer;
-    padding: 10px
-  }
-  
-  li {
-    list-style-type: none;
-  }
-  
   footer {
     background: $footer;
     padding: 20px;
     text-align: left;
-    color: $white;
-    h3{
+  }
+  
+  footer h3 {
     font-family: $font;
-    font-size: x-large; 
+    font-size: x-large;
     color: $white;
     padding-bottom: 1.1rem;
-    }
-    }
+  }
   
-  #liens_footer {
+  .lien_footer a{
     color: $white;
     text-decoration: none;
   }
@@ -683,13 +687,14 @@ body {
       justify-content: center;
       padding: 30px;
     }
-    .restaurants h2 {
+    h1{
       font-size: 25px;
-      font-family: "Roboto", sans-serif;
       font-weight: bold;
-      color: #333;
-      position: absolute;
-      bottom: 55px;
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 15px;
+      margin-left: 9px;
+      position: relative;
+      text-align: center;
     }
     .cartes {
       display: inline;

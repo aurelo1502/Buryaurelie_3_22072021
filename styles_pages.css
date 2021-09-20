@@ -179,7 +179,6 @@
     }
     div {
     display : block;
-    background-color : #f6f6f6;
     }
     .sous_titre {
     margin : 25px 0;
@@ -204,28 +203,25 @@
     width : 40px;
     }
     article {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
     background: #f6f6f6;
     cursor: pointer;
     height: auto;
     margin-left: auto;
     flex: 1 0 33%;
     overflow: hidden;
-}
+    }
     .entrees{
       animation: 0.5s ease 0s fadeIn;
       -webkit-animation: 0.5s ease 0s fadeIn;
-}
+    }
     .plats {
       animation: 0.5s ease 0.5s fadeIn;
       -webkit-animation: 0.5s ease 0.5s fadeIn;
-}
+    }
     .desserts {
       animation: 0.5s ease 1s fadeIn;
       -webkit-animation: 0.5s ease 1s fadeIn;
-}
+    }
     p {
     display : block;
     width : 80%;
@@ -245,7 +241,7 @@
     margin: 10px 0;
     flex: 1 0 33%;
     overflow: hidden;
-}
+    }
     .prix {
     margin : 1.7rem;
     font-weight : bold;
@@ -289,337 +285,339 @@
     overflow: hidden;
      }
     .entree:hover .btn-circle {
-        position: absolute;
-        padding: 1.7rem; 
-        background: #99e2d0; 
+    position: absolute;
+    padding: 1.7rem; 
+    background: #99e2d0; 
      }
     .plat:hover .checkbox {
-        display: block;
-        flex: 0 0 15%;
-        background: #99e2d0;
-        width: auto;
-        overflow: hidden;
-      }
+    display: block;
+    flex: 0 0 15%;
+    background: #99e2d0;
+    width: auto;
+    overflow: hidden;
+    }
     .plat:hover .btn-circle {
-        position: absolute;
-        padding: 1.7rem; 
-        background: #99e2d0;
-     }
+    position: absolute;
+    padding: 1.7rem; 
+    background: #99e2d0;
+    }
     .dessert:hover .checkbox {
-        display: block;
-        flex: 0 0 15%;
-        background: #99e2d0;
-        width: auto;
-        overflow: hidden;
-      }
+    display: block;
+    flex: 0 0 15%;
+    background: #99e2d0;
+    width: auto;
+    overflow: hidden;
+    }
     .dessert:hover .btn-circle {
-        position: absolute;
-        padding: 1.7rem; 
-        background: #99e2d0;
+    position: absolute;
+    padding: 1.7rem; 
+    background: #99e2d0;
      }
     .btn_commander a {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        width: 60%;
-        display: inline-block;
-        position: relative;
-        background: linear-gradient(#ff79da, #9356dc);
-        text-decoration: none;
-        cursor: pointer;
-        border: 0;
-        text-align: center;
-        border-radius: 25px;
-        font-size: 15px;
-        color: #fff;
-        box-shadow: 0 5px 15px 0 #c3c3c3;
-        font-weight: bold;
-        padding: 15px 30px;
-        transition: 0.2s;
-        left: 4.4rem;
-        -webkit-border-radius: 25px;
-        -moz-border-radius: 25px;
-        -ms-border-radius: 25px;
-        -o-border-radius: 25px;
-}
-        btn_commander {
-        padding : 2rem;
-        }
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 60%;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(#ff79da, #9356dc);
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 15px;
+    color: #fff;
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+    font-weight: bold;
+    padding: 15px 30px;
+    transition: 0.2s;
+    left: 4.4rem;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    }
+    btn_commander {
+    padding : 2rem;
+    }
 
-    /*-----------------------Footer------------------*/
+        /*-----------------------Footer------------------*/
 
     footer {
     display : block;
     }
-    .menu_footer {
-    background-color : #323232;
-    padding : 10px;
-    }
-    li {
-    list-style-type : none;
-    }
     footer {
-    background : #333;
-    padding : 20px;
-    text-align : left;
-    color : #fff;
-    }
-    a:link {
-    text-decoration : none;
-    }
-    footer h3 {
-    font-family : "Shrikhand";
-    font-size : x-large;
-    color : #FFFFFF;
-    padding-bottom : 1.1rem;
-    }
-    #liens_footer {
-    color : #fff;
-    }
+    background: #323232;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  footer h3 {
+    font-family: "Shrikhand";
+    font-size: x-large;
+    color: #fff;
+    padding-bottom: 1.1rem;
+  }
+  
+  .lien_footer a {
+    color: #fff;
+    text-decoration: none;
+  }
     .footer-icons{
-        color: #fff;
-        width: 5%;
+    color: #fff;
+    width: 5%;
       }
   
 /*----------------Checkbox Animation-------------*/
 
   @keyframes checkbox {
   0% {
-    transform: translate(50px, 0);
+  transform: translate(50px, 0);
   }
   20% {
-    transform: translate(30px, 0);
+  transform: translate(30px, 0);
   }
   40% {
-    transform: translate(20px, 0);
+  transform: translate(20px, 0);
   }
   60% {
-    transform: translate(15px, 0);
+  transform: translate(15px, 0);
   }
   80% {
-    transform: translate(7px, 0);
-    -webkit-transform: translate(7px, 0);
-    -moz-transform: translate(7px, 0);
-    -ms-transform: translate(7px, 0);
-    -o-transform: translate(7px, 0);
-}
+  transform: translate(7px, 0);
+  -webkit-transform: translate(7px, 0);
+  -moz-transform: translate(7px, 0);
+  -ms-transform: translate(7px, 0);
+  -o-transform: translate(7px, 0);
+  }
   100% {
-    transform: translate(1px, 0);
+  transform: translate(1px, 0);
   }
   }
   
 /*----------------Pages Animation-----------------*/
 
 @keyframes fadeIn {
-    0% {margin-top: 100%;}
-    100% {margin-top: 0%;}
+  0% {margin-top: 100%;}
+  100% {margin-top: 0%;}
+  }
+
+
+/*---------------Responsive---------------------*/
+
+@media screen and (min-width: 768px) {
+  .menus {
+    z-index : 0;
+    background-color : #f6f6f6;
+    }
+    main {
+    display : flex;
+    flex-direction: column;
+    max-width : 1440px;
+    }
+    .titres_menus {
+    font-family : "Shrikhand", cursive;
+    font-weight : normal;
+    text-align : left;
+    padding : 20px 0 20px 20px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    font-size : 25px;
+    font-weight : normal;
+    }
+    .like .default-icon:hover, .like:hover, .like .hover-icon:hover {
+    transition: 1s 0s ease;
+    }
+    .like {
+      position: relative;
+      left: 33%;
+    }
+    .like i {
+    color: #9d9d9d;
+    font-size: 24px;
+    left: 50%;
+    }
+    .like .hover-icon {
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    }
+    .like .hover-icon:hover {
+    background: linear-gradient(#ff79da, #9356dc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    opacity: 1;
+    }
+    .like:hover {
+     cursor: pointer;
+     overflow: hidden;
+     opacity: 1;
+     }
+    .like .default-icon:hover {
+     opacity: 0;
     }
 
-
-    @media screen and (min-width: 768px) {
-      section {
-      display : block;
-      }
-      div {
+    /*----------------Section details-------------*/
+  
+    section {
       display : flex;
-      align-items: center;
-      background-color : #f6f6f6;
+      flex-flow:row;
+      justify-content:space-between;
       }
       .sous_titre {
       margin : 25px 0;
       font-size : 18px;
+      text-transform : uppercase;
       }
       h2 {
-      display: inline;
-      margin-left: 200px;
-      margin-right: auto;
       font-size : 20px;
       color : #919191;
       font-weight : normal;
       }
-          .like .default-icon:hover, .like:hover, .like .hover-icon:hover {
-  transition: 1s 0s ease;
-  }
-  .like {
-  position: relative;
-  left: 2rem;
-  bottom: 0.1rem;
-   }
-  .like i {
-  color: #9d9d9d;
-  font-size: 24px;
-  left: 50%;
-  }
-  .like .hover-icon {
-  left: 0;
-  right: 0;
-  opacity: 0;
-  position: absolute;
-  }
-  .like .hover-icon:hover {
-  background: linear-gradient(#ff79da, #9356dc);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  opacity: 1;
-  }
-  .like:hover {
-   cursor: pointer;
-   overflow: hidden;
-   opacity: 1;
-   }
-  .like .default-icon:hover {
-   opacity: 0;
-  }
+      h2:after {
+      content : "";
+      border-bottom : 2px solid #99e2d0;
+      display : block;
+      padding-top : 3px;
+      width : 40px;
+      }
       article {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
       background: #f6f6f6;
       cursor: pointer;
-      
-  }
+      overflow: hidden;
+      padding: 0.2rem;
+      }
       .entrees{
         animation: 0.5s ease 0s fadeIn;
         -webkit-animation: 0.5s ease 0s fadeIn;
-  }
+      }
       .plats {
         animation: 0.5s ease 0.5s fadeIn;
         -webkit-animation: 0.5s ease 0.5s fadeIn;
-  }
+      }
       .desserts {
         animation: 0.5s ease 1s fadeIn;
         -webkit-animation: 0.5s ease 1s fadeIn;
-  }
+      }
       p {
-      display : inline-block;
+      display : block;
       width : 100%;
-      height:100%;
-      padding : 5px;
-      margin: auto;
-      white-space: pre-wrap;
+      padding : 30px 0px;
+      overflow: hidden;
+      white-space: normal;
       text-align: center;
       font-size: 17px;
       }
       .entree, .plat, .dessert {
       display: flex;
+      flex-direction: row; 
+      width: 100%;
       background: #fff;
       border-radius: 20px;
       cursor: pointer;
       box-shadow: 0 5px 15px 0 #c3c3c3;
-      margin: 10px 10px 20px 20px;
-      height: auto;
-      width: auto;
-    }
-    .checkbox {
-    display: none;
-    width : 30%;
-    border-bottom-right-radius : 15px;
-    border-top-right-radius : 15px;
-    background-color : #99e2d0;
-    animation: checkbox ease 0.3s;
-    }
-    .checkbox i {
-    color: white;
-    font-size: small;;
-    transform: rotate(360deg);
-    transition: transform 1s;
-    -webkit-transition: transform 1s;
-    -moz-transition: transform 1s;
-    -ms-transition: transform 1s;
-    -o-transition: transform 1s;
-    }
-    .checkbox i:hover{
-       transform: rotate(0deg);
-    }
-    .entrees .plats .desserts .btn-circle {
-    font-size : 18px;
-    color : #fff;
-    }
-    .btn-circle {
-    font-size: 1rem;
-    cursor: pointer;
-    padding: 1rem 1rem;
-    border-radius: 10rem;
-    }  
-    .entree:hover .checkbox {
-    display: block;
-    flex: 0 0 15%;
-    background: #99e2d0;
-    width: auto;
-    overflow: hidden;
-     }
-    .entree:hover .btn-circle {
-        position: absolute;
-        padding: 1.2rem;
-        background: #99e2d0; 
-     }
-    .plat:hover .checkbox {
-        display: block;
-        flex: 0 0 15%;
-        background: #99e2d0;
-        width: auto;
-        overflow: hidden;
+      overflow: hidden;
       }
-    .plat:hover .btn-circle {
-        position: absolute;
-        padding: 1.2rem; 
-        background: #99e2d0;
-     }
-    .dessert:hover .checkbox {
-        display: block;
-        flex: 0 0 15%;
-        background: #99e2d0;
-        width: auto;
-        overflow: hidden;
+      .prix {
+      margin : auto;
+      padding: 10px;
+      font-weight : bold;
       }
-    .dessert:hover .btn-circle {
-        position: absolute;
-        padding: 1.2rem; 
-        background: #99e2d0;
-    .btn_commander a {
-          margin-top: 40px;
-          margin-bottom: 40px;
-          width: 60%;
-          display: inline-block;
-          position: relative;
+      .checkbox {
+      display: none;
+      width : 25%;
+      background-color : #99e2d0;
+      animation: checkbox ease 0.3s;
+      }
+      .checkbox i {
+      color: white;
+      font-size: large;
+      transform: rotate(360deg);
+      transition: transform 1s;
+      -webkit-transition: transform 1s;
+      -moz-transition: transform 1s;
+      -ms-transition: transform 1s;
+      -o-transition: transform 1s;
+      }
+      .checkbox i:hover{
+         transform: rotate(0deg);
+      }
+      .btn-circle {
+      cursor: pointer;
+      }  
+      .entree:hover .checkbox {
+      display: block;
+      flex: 0 0 25%;
+      background: #99e2d0;
+      overflow: hidden;
+       }
+      .entree:hover .btn-circle {
+      position: absolute;
+      background: #99e2d0; 
+       }
+      .plat:hover .checkbox {
+      display: block;
+      flex: 0 0 25%;
+      background: #99e2d0;
+      overflow: hidden;
+      }
+      .plat:hover .btn-circle {
+      position: absolute;
+      background: #99e2d0;
+      }
+      .dessert:hover .checkbox {
+      display: block;
+      flex: 0 0 25%;
+      background: #99e2d0;
+      overflow: hidden;
+      }
+      .dessert:hover .btn-circle {
+      position: absolute;
+      background: #99e2d0;
+       }
+      .btn_commander a {
+          display: inline-flex;
+          position: absolute;
+          flex-direction: column;
           background: linear-gradient(#ff79da, #9356dc);
           text-decoration: none;
           cursor: pointer;
           border: 0;
           text-align: center;
           border-radius: 25px;
-          font-size: 15px;
+          font-size: large;
           color: #fff;
           box-shadow: 0 5px 15px 0 #c3c3c3;
           font-weight: bold;
           transition: 0.2s;
-          left: 13rem;
+          left: 30rem;
+          top: 15rem;
+          width: 30%;
+          height: max-content;
           -webkit-border-radius: 25px;
           -moz-border-radius: 25px;
           -ms-border-radius: 25px;
           -o-border-radius: 25px;
-     }
-
-      .btn_commander:hover{
-      background: linear-gradient(#e0c4d8, #e9e9e9);
+          }
+      .btn_commander a:hover {
+      background: linear-gradient(#f77dd4, #ab65fa);
       }
       footer {
-      background: #323232;
-      padding: 20px;
-      text-align: center;
-      color: #fff;
+        background: #323232;
+        padding: 20px;
+        text-align: center;
+      }
+      footer h3 {
+        font-family: "Shrikhand";
+        font-size: xxx-large;
+        color: #fff;
+        padding-bottom: 1.1rem;
+      }
+      .lien_footer a {
+        color: #fff;
+        text-decoration: none;
+        font-size: larger;
+      }
     }
     
-    footer h3 {
-      font-family: "Shrikhand";
-      font-size: xxx-large;
-      color: #fff;
-      padding-bottom: 1.1rem;
-    }
-    
-    #liens_footer {
-      color: #fff;
-      text-decoration: none;
-      font-size: large;
-    }
-  }
-  

@@ -23,7 +23,8 @@ body {
   -webkit-animation: loader 1 3000ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  overflow: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .loader_page h3 {
@@ -189,8 +190,8 @@ form {
   display: inline-block;
   text-align: center;
   -webkit-appearance: auto;
-     -moz-appearance: auto;
-          appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
   background-color: #E5E5E5;
   cursor: text;
   margin: auto;
@@ -224,6 +225,26 @@ main {
   background-color: #f4f4f4;
 }
 
+.reservation h1 {
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: 0.67em;
+  margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+  margin-block-end: 0.67em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.reservation h1 h2 {
+  font-size: larger;
+  font-weight: normal;
+  color: #888;
+}
+
 article {
   display: block;
 }
@@ -232,40 +253,29 @@ article a {
   text-decoration: none;
 }
 
-.titres_reservation h2, .titres_reservation h1 {
-  font-family: "Shrikhand";
-  font-size: 25px;
+.reservation h1 {
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: 0.67em;
+  margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+  margin-block-end: 0.67em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
   font-weight: bold;
 }
 
-h2, h3, h4, h5, h6 {
-  font-size: 100%;
+.reservation h2 {
+  font-size: larger;
   font-weight: normal;
+  color: #888;
 }
 
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, input, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0.5px;
-}
-
-h1 {
-  display: block;
-  font-size: 2em;
-  -webkit-margin-before: 0.67em;
-          margin-block-start: 0.67em;
-  -webkit-margin-after: 0.67em;
-          margin-block-end: 0.67em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
-  font-weight: bold;
-}
-
-.reservation h2 {
-  font-size: 15px;
-  font-weight: normal;
-  color: #888;
 }
 
 a.btn_reservation {
@@ -415,11 +425,12 @@ section {
   margin-top: 15px;
 }
 
-.restaurants h2 {
+h1 {
   font-size: 22px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin-bottom: 18px;
+  margin-left: 10px;
   color: #333;
 }
 
@@ -471,10 +482,8 @@ figcaption {
   width: auto;
 }
 
-.descriptif_restaurant {
-  display: block;
-  width: auto;
-  margin-top: auto;
+.descriptif_restaurant p {
+  margin-left: 5px;
 }
 
 .cartes h4 {
@@ -483,6 +492,8 @@ figcaption {
 
 h4, h5 {
   margin-left: 0.5rem;
+  font-size: 100%;
+  font-weight: normal;
 }
 
 .btn_reservation:hover {
@@ -552,20 +563,10 @@ h4, h5 {
   z-index: 999;
 }
 
-.menu_footer {
-  background-color: #323232;
-  padding: 10px;
-}
-
-li {
-  list-style-type: none;
-}
-
 footer {
   background: #323232;
   padding: 20px;
   text-align: left;
-  color: #fff;
 }
 
 footer h3 {
@@ -575,7 +576,7 @@ footer h3 {
   padding-bottom: 1.1rem;
 }
 
-#liens_footer {
+.lien_footer a {
   color: #fff;
   text-decoration: none;
 }
@@ -779,13 +780,14 @@ footer h3 {
     justify-content: center;
     padding: 30px;
   }
-  .restaurants h2 {
+  h1 {
     font-size: 25px;
-    font-family: "Roboto", sans-serif;
     font-weight: bold;
-    color: #333;
-    position: absolute;
-    bottom: 55px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 15px;
+    margin-left: 9px;
+    position: relative;
+    text-align: center;
   }
   .cartes {
     display: inline;
