@@ -428,14 +428,13 @@
     .like .default-icon:hover, .like:hover, .like .hover-icon:hover {
     transition: 1s 0s ease;
     }
-    .like {
-      position: relative;
-      left: 33%;
-    }
     .like i {
     color: #9d9d9d;
     font-size: 24px;
-    left: 50%;
+    }
+    .like{
+    position: relative;
+    left: 17.18rem;
     }
     .like .hover-icon {
     left: 0;
