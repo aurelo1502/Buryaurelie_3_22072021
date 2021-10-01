@@ -171,9 +171,7 @@
     }
 
     /*----------------Section details-------------*/
-    .menu_details {
-    padding : 20px;
-    }
+
     section {
     display : block;
     }
@@ -206,6 +204,7 @@
     background: #f6f6f6;
     cursor: pointer;
     height: auto;
+    padding: 5px;
     margin-left: auto;
     flex: 1 0 33%;
     overflow: hidden;
@@ -229,53 +228,49 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 17px;
+    font-size: 14px;
     }
     .entree, .plat, .dessert {
-    display: flex;
-    justify-content: space-between;
-    background: #fff;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px 0 #c3c3c3;
-    margin: 10px 0;
-    flex: 1 0 33%;
-    overflow: hidden;
-    }
-    .prix {
-    margin : 1.7rem;
-    font-weight : bold;
-    }
-    .checkbox {
-    display: none;
-    width : 30%;
-    border-bottom-right-radius : 15px;
-    border-top-right-radius : 15px;
-    background-color : #99e2d0;
-    animation: checkbox ease 0.3s;
-    }
-    .checkbox i {
-    color: white;
-    font-size: x-large;
-    transform: rotate(360deg);
-    transition: transform 1s;
-    -webkit-transition: transform 1s;
-    -moz-transition: transform 1s;
-    -ms-transition: transform 1s;
-    -o-transition: transform 1s;
-    }
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px 0 #c3c3c3;
+      margin: 10px;
+      overflow: hidden;
+      }
+      .prix {
+      margin : 1.7rem;
+      font-weight : bold;
+      }
+      .checkbox {
+      display: none;
+      background-color : #99e2d0;
+      animation: checkbox ease 0.3s;
+      }
+      .checkbox i {
+      color: white;
+      font-size: x-large;
+      width: 0;
+      height: 0;
+      width: 0;
+      transform: rotate(360deg);
+      transition: transform 0.5s;
+      -webkit-transition: transform 1s;
+      -moz-transition: transform 1s;
+      -ms-transition: transform 1s;
+      -o-transition: transform 1s;
+      }
     .checkbox i:hover{
        transform: rotate(0deg);
     }
     .entrees .plats .desserts .btn-circle {
-    font-size : 24px;
     color : #fff;
     }
     .btn-circle {
-    font-size: 1rem;
-    cursor: pointer;
-    padding: 1.85rem 3rem;
-    border-radius: 10rem;
+      cursor: pointer;
+      border-radius: 20px;
     }  
     .entree:hover .checkbox {
     display: block;
@@ -485,7 +480,6 @@
       background: #f6f6f6;
       cursor: pointer;
       overflow: hidden;
-      padding: 0.2rem;
       }
       .entrees{
         animation: 0.5s ease 0s fadeIn;
@@ -511,9 +505,8 @@
       .entree, .plat, .dessert {
       display: flex;
       flex-direction: row; 
-      width: 100%;
+      width: 90%;
       background: #fff;
-      border-radius: 20px;
       cursor: pointer;
       box-shadow: 0 5px 15px 0 #c3c3c3;
       overflow: hidden;
@@ -526,21 +519,24 @@
       .checkbox {
       display: none;
       width : 25%;
+      padding: 20% 0;
       background-color : #99e2d0;
       animation: checkbox ease 0.3s;
-      }
+        }
       .checkbox i {
-      color: white;
-      font-size: large;
+      position:absolute;
+      display: flex;
+      font-size: xx-large;
+      height: 0;
+      width: 0;
+      background-color: #fff;
+      align-items: center;
+      justify-content: center;
       transform: rotate(360deg);
-      transition: transform 1s;
-      -webkit-transition: transform 1s;
-      -moz-transition: transform 1s;
-      -ms-transition: transform 1s;
-      -o-transition: transform 1s;
+      transition-duration:0.5s;
       }
       .checkbox i:hover{
-         transform: rotate(0deg);
+      transform: rotate(0deg);
       }
       .btn-circle {
       cursor: pointer;
