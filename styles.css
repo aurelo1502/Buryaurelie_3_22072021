@@ -19,10 +19,10 @@ body {
   top: 0;
   position: fixed;
   -webkit-animation: loader 1 3000ms;
-          animation: loader 1 3000ms;
+  animation: loader 1 3000ms;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
-  -webkit-animation: loader 1 2000ms;
+  -webkit-animation: loader 1 3000ms;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   overflow: hidden;
@@ -64,33 +64,33 @@ body {
 }
 
 .cs-loader-inner label:nth-child(6) {
-  -webkit-animation: circles 3s 1 ease-in-out;
-  animation: circles 1s 1 ease-in-out;
+  -webkit-animation: circles 3s 1 ease-out;
+  animation: circles 1s ease-in;
 }
 
 .cs-loader-inner label:nth-child(5) {
-  -webkit-animation: circles 3s 100ms ease-in-out;
-  animation: circles 1s 1 ease-in-out;
+  -webkit-animation: circles 3s 100ms ease-out;
+  animation: circles 1s ease-in;
 }
 
 .cs-loader-inner label:nth-child(4) {
-  -webkit-animation: circles 3s 200ms 1 ease-in-out;
-  animation: circles 1s 100ms 1 ease-in-out;
+  -webkit-animation: circles 3s 200ms 1 ease-out;
+  animation: circles 1s 100ms ease-in;
 }
 
 .cs-loader-inner label:nth-child(3) {
-  -webkit-animation: circles 3s 300ms 1 ease-in-out;
-  animation: circles 1s 200ms 1 ease-in-out;
+  -webkit-animation: circles 3s 300ms 1 ease-out;
+  animation: circles 1s 200ms ease-in;
 }
 
 .cs-loader-inner label:nth-child(2) {
-  -webkit-animation: circles 3s 400ms 1 ease-in-out;
-  animation: circles 1s 300ms 1 ease-in-out;
+  -webkit-animation: circles 3s 400ms 1 ease-out;
+  animation: circles 1s 300ms ease-in;
 }
 
 .cs-loader-inner label:nth-child(1) {
-  -webkit-animation: circles 3s 500ms 1 ease-in-out;
-  animation: circles 1s 400ms 1 ease-in-out;
+  -webkit-animation: circles 3s 500ms 1 ease-out;
+  animation: circles 1s 400ms ease-in;
 }
 
 /*----------header-----------*/
@@ -100,7 +100,7 @@ header__logo {
   text-align: center;
   -webkit-box-shadow: 0 1px 4px #090909;
           box-shadow: 0 1px 4px #090909;
-  border-bottom: 2px solid #EAEAEA;
+  border-bottom: 2px solid #F6f6f6;
   padding: 5px 46px;
 }
 
@@ -159,7 +159,7 @@ div {
 .fa, .far, .fas {
   font-family: "Font Awesome 5 free";
   font-weight: 900;
-  width: 5%;
+  width: 7%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -177,7 +177,7 @@ input {
   border-style: hidden;
   font-weight: bold;
   font-size: larger;
-  background-color: #EAEAEA;
+  background-color: #E5E5E5;
 }
 
 form {
@@ -223,7 +223,7 @@ main {
       -ms-flex: 100%;
           flex: 100%;
   text-align: center;
-  padding: 10px 20px 20px 20px;
+  padding: 0px 20px 60px 10px;
   background-color: #f4f4f4;
 }
 
@@ -231,7 +231,7 @@ main {
   display: block;
   font-size: 2em;
   -webkit-margin-before: 0.67em;
-  margin-block-start: 0.67em;
+  margin-block-start: -0.67em;
   -webkit-margin-after: 0.67em;
   margin-block-end: 0.67em;
   -webkit-margin-start: 0px;
@@ -354,7 +354,7 @@ aside {
           flex: 1 0 auto;
   margin-bottom: 20px;
   text-decoration: none;
-  background: #EAEAEA;
+  background: #F6f6f6;
   border-radius: 30px;
   text-align: justify;
   margin-left: 0;
@@ -422,10 +422,12 @@ i {
 
 section {
   display: block;
+  background-color: #f4f4f4;
+  margin-left: -10px;
 }
 
 .restaurants {
-  background-color: #EAEAEA;
+  background-color: #f4f4f4;
   padding: 10px;
   margin-top: 15px;
 }
@@ -434,8 +436,9 @@ h1 {
   font-size: 22px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  margin-bottom: 18px;
-  margin-left: 10px;
+  padding-top: 50px;
+  margin-bottom: -20px;
+  margin-left: 27px;
   color: #333;
 }
 
@@ -450,8 +453,8 @@ h1 {
   margin: 15px;
   min-width: 0;
   background: #fff;
-  -webkit-box-shadow: 2px 2px 10px 2px #EAEAEA;
-          box-shadow: 2px 2px 10px 2px #EAEAEA;
+  -webkit-box-shadow: 2px 2px 10px 2px #F6f6f6;
+          box-shadow: 2px 2px 10px 2px #F6f6f6;
   border-radius: 15px;
 }
 
@@ -509,8 +512,8 @@ h4, h5 {
 }
 
 .like .default-icon:hover, .like:hover, .like .hover-icon:hover {
-  -webkit-transition: 0.5s 0s ease;
-  transition: 0.5s 0s ease;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 
 .like {
@@ -670,6 +673,10 @@ footer h3 {
 
 /*------------------Responsive------------------*/
 @media screen and (min-width: 768px) {
+  body {
+    margin-left: 0;
+    margin-right: -40px;
+  }
   .fonctionnement {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -707,7 +714,7 @@ footer h3 {
     flex-direction: row;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    padding: 20px;
+    padding: 20px 30px;
     margin: auto;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -775,10 +782,10 @@ footer h3 {
   }
   section {
     display: block;
-    background-color: #E5E5E5;
+    background-color: #f4f4f4;
   }
   .restaurants {
-    background-color: #E5E5E5;
+    background-color: #f4f4f4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -791,7 +798,6 @@ footer h3 {
     font-size: 25px;
     font-weight: bold;
     font-family: "Roboto", sans-serif;
-    margin-bottom: 15px;
     margin-left: 9px;
     padding: 15px;
     position: relative;
@@ -844,7 +850,7 @@ footer h3 {
   }
   footer {
     background: #323232;
-    padding: 20px;
+    padding: 4.5rem;
     text-align: center;
     color: #fff;
   }

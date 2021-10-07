@@ -244,6 +244,13 @@
       margin : 1.7rem;
       font-weight : bold;
       }
+      .entrees .plats .desserts .btn-circle {
+      color : #fff;
+      }
+      .btn-circle {
+      cursor: pointer;
+      border-radius: 20px;
+      }  
       .checkbox {
       display: none;
       background-color : #99e2d0;
@@ -275,7 +282,7 @@
     }  
     .entree:hover .checkbox {
     display: block;
-    flex: 0 0 15%;
+    flex: 0 0 18%;
     background: #99e2d0;
     width: auto;
     overflow: hidden;
@@ -287,7 +294,7 @@
      }
     .plat:hover .checkbox {
     display: block;
-    flex: 0 0 15%;
+    flex: 0 0 18%;
     background: #99e2d0;
     width: auto;
     overflow: hidden;
@@ -299,7 +306,7 @@
     }
     .dessert:hover .checkbox {
     display: block;
-    flex: 0 0 15%;
+    flex: 0 0 18%;
     background: #99e2d0;
     width: auto;
     overflow: hidden;
@@ -335,6 +342,10 @@
     }
     btn_commander {
     padding : 2rem;
+    }
+    .btn_commander a:hover {
+    background: linear-gradient(#ff79da, #c2a3e6);
+    box-shadow: 0 10px 30px 0 #c3c3c3;
     }
 
         /*-----------------------Footer------------------*/
@@ -516,14 +527,14 @@
         -webkit-animation: 0.5s ease 1s fadeIn;
       }
       p {
-      padding : 10px;
-      white-space:normal;
+      white-space: revert;
       text-align:center;
-      text-overflow: ellipsis;
       font-size: medium;
+      height: 6.8rem;
       }
       p:hover{
-        text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       }
       .entree, .plat, .dessert {
       display: flex;
@@ -541,8 +552,6 @@
       }
       .checkbox {
       display: none;
-      padding-top: 1%;
-      padding-left: 4%;
       background-color : #99e2d0;
       animation: checkbox ease 0.3s;
       }
@@ -567,6 +576,7 @@
       .entree:hover .checkbox {
       display: block;
       flex: 0 0 30%;
+      padding: 6% 3%;
       background: #99e2d0;
       overflow: hidden;
        }
@@ -577,6 +587,7 @@
       .plat:hover .checkbox {
       display: block;
       flex: 0 0 30%;
+      padding: 6% 3%;
       background: #99e2d0;
       overflow: hidden;
       }
@@ -587,6 +598,7 @@
       .dessert:hover .checkbox {
       display: block;
       flex: 0 0 30%;
+      padding: 6% 3%;
       background: #99e2d0;
       overflow: hidden;
       }
@@ -619,7 +631,7 @@
           -o-border-radius: 25px;
           }
       .btn_commander a:hover {
-      background: linear-gradient(#f77dd4, #ab65fa);
+      background: linear-gradient(#e6acd5, #ab65fa);
       }
       footer {
         background: #323232;
