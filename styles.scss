@@ -732,7 +732,7 @@ body {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      padding: 30px;
+      padding-right: 2.8rem;
     }
     h1{
       font-size: 25px;
@@ -791,8 +791,9 @@ body {
     footer {
       background: #323232;
       padding: 4.5rem;
+      height: 15.6rem;
       text-align: center;
-      color: #fff;
+      font-size: large;
     }
     
     footer h3 {
