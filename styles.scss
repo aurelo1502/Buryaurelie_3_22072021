@@ -682,13 +682,14 @@ body {
     }
     .aside_numero {
       position: relative;
-      left: 3.8rem;
-      top: -40px;
+      top: -2.2rem;
+      left: 4rem;
       background: #9356dc;
+      border-radius:100%;
       color: #fff;
-      padding: 0.8rem 1.1rem 0.8rem 1.1rem;
+      padding: 0.7rem 1rem 0.7rem 1rem;
       font-weight: bold;
-      font-size: 16px;
+      font-size: medium;
     }
     .aside_icones {
       display: -webkit-box;
