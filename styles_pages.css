@@ -282,7 +282,7 @@
     }  
     .entree:hover .checkbox {
     display: block;
-    flex: 0 0 18%;
+    flex: 0 0 60px;
     background: #99e2d0;
     width: auto;
     overflow: hidden;
@@ -294,7 +294,7 @@
      }
     .plat:hover .checkbox {
     display: block;
-    flex: 0 0 18%;
+    flex: 0 0 60px;
     background: #99e2d0;
     width: auto;
     overflow: hidden;
@@ -306,7 +306,7 @@
     }
     .dessert:hover .checkbox {
     display: block;
-    flex: 0 0 18%;
+    flex: 0 0 60px;
     background: #99e2d0;
     width: auto;
     overflow: hidden;
@@ -429,6 +429,36 @@
     transform: rotate(360deg);
     transition-duration: 0.5s;
     }
+    .entree:hover .checkbox {
+      display: block;
+      flex: 0 0 75px;
+      background: #99e2d0;
+      overflow: hidden;
+       }
+      .entree:hover .btn-circle {
+      position: absolute;
+      background: #99e2d0; 
+       }
+      .plat:hover .checkbox {
+      display: block;
+      flex: 0 0 75px;
+      background: #99e2d0;
+      overflow: hidden;
+      }
+      .plat:hover .btn-circle {
+      position: absolute;
+      background: #99e2d0;
+      }
+      .dessert:hover .checkbox {
+      display: block;
+      flex: 0 0 75px;
+      background: #99e2d0;
+      overflow: hidden;
+      }
+      .dessert:hover .btn-circle {
+      position: absolute;
+      background: #99e2d0;
+       }
 }
 
 /*----------------Desktop----------------------*/
@@ -485,11 +515,23 @@
     }
 
      /*----------------Section details-------------*/
-  
+     html{
+      padding: 90px 0px 0px 10px;
+      margin: -90px 0 0px -10px;
+    }
      section {
       display : flex;
       flex-direction: row;
       width: 100%;
+      height:auto;
+      padding: 0px 0 20px 0;
+      background-color: #f6f6f6;
+      }
+     section {
+      display : flex;
+      flex-direction: row;
+      width: 100%;
+      padding: 0px 0 40px 0;
       background-color: #f6f6f6;
       }
       .sous_titre {
@@ -529,8 +571,7 @@
       p {
       white-space: revert;
       text-align:center;
-      font-size: medium;
-      height: 6.8rem;
+      font-size: 13px;
       }
       p:hover{
       text-overflow: ellipsis;
@@ -538,8 +579,9 @@
       }
       .entree, .plat, .dessert {
       display: flex;
-      flex-direction: row; 
-      width: 90%;
+      width: 95%;
+      height: 85px;
+      padding: 0px;
       background: #fff;
       cursor: pointer;
       box-shadow: 0 5px 15px 0 #c3c3c3;
@@ -547,7 +589,7 @@
       }
       .prix {
       margin : auto;
-      padding: 10px;
+      padding: 0px;
       font-weight : bold;
       }
       .checkbox {
@@ -558,12 +600,8 @@
       .checkbox i {
       position:absolute;
       display: flex;
-      font-size: x-large;
-      height: 0;
-      width: 0;
+      font-size: large;
       background-color: #fff;
-      align-items: center;
-      justify-content: center;
       transform: rotate(360deg);
       transition-duration:0.5s;
       }
@@ -575,8 +613,7 @@
       }  
       .entree:hover .checkbox {
       display: block;
-      flex: 0 0 30%;
-      padding: 6% 3%;
+      flex: 0 0 55px;
       background: #99e2d0;
       overflow: hidden;
        }
@@ -586,8 +623,7 @@
        }
       .plat:hover .checkbox {
       display: block;
-      flex: 0 0 30%;
-      padding: 6% 3%;
+      flex: 0 0 55px;
       background: #99e2d0;
       overflow: hidden;
       }
@@ -597,8 +633,7 @@
       }
       .dessert:hover .checkbox {
       display: block;
-      flex: 0 0 30%;
-      padding: 6% 3%;
+      flex: 0 0 55px;
       background: #99e2d0;
       overflow: hidden;
       }
@@ -607,6 +642,77 @@
       background: #99e2d0;
        }
       .btn_commander a {
+      display: inline-flex;
+      position: absolute;
+      flex-direction: column;
+      background: linear-gradient(#ff79da, #9356dc);
+      text-decoration: none;
+      cursor: pointer;
+      border: 0;
+      text-align: center;
+      border-radius: 25px;
+      font-size: large;
+      color: #fff;
+      box-shadow: 0 5px 15px 0 #c3c3c3;
+      font-weight: bold;
+      transition: 0.2s;
+      left: 25rem;
+      top: 15rem;
+      width: 30%;
+      height: max-content;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      }
+      .btn_commander a:hover {
+      background: linear-gradient(#e6acd5, #ab65fa);
+      }
+      footer {
+      background: #323232;
+      padding: 20px 20px 0px 0px;
+      height: 300px;
+      margin: 15px 0px 10px 0px;
+      text-align: center;
+      }
+      footer h3 {
+        font-family: "Shrikhand";
+        font-size: xxx-large;
+        color: #fff;
+        padding-bottom: 1.1rem;
+      }
+      .lien_footer a {
+        color: #fff;
+        text-decoration: none;
+        font-size: larger;
+      }
+    }
+
+    @media screen and (min-width: 990px) {
+      section {
+      display : flex;
+      flex-direction: row;
+      width: 100%;
+      height:100%;
+      padding: 40px 20px 40px 0;
+      background-color: #f6f6f6;
+      }
+      .entree, .plat, .dessert {
+        display: flex;
+        width: 95%;
+        height: 90px;
+        margin: 3%;
+        background: #fff;
+        cursor: pointer;
+        box-shadow: 0 5px 15px 0 #c3c3c3;
+        overflow: hidden;
+        }
+      p {
+        white-space: revert;
+        text-align:center;
+        font-size: 14px;
+        }
+        .btn_commander a {
           display: inline-flex;
           position: absolute;
           flex-direction: column;
@@ -622,7 +728,7 @@
           font-weight: bold;
           transition: 0.2s;
           left: 30rem;
-          top: 15rem;
+          top: 16rem;
           width: 30%;
           height: max-content;
           -webkit-border-radius: 25px;
@@ -630,23 +736,9 @@
           -ms-border-radius: 25px;
           -o-border-radius: 25px;
           }
-      .btn_commander a:hover {
-      background: linear-gradient(#e6acd5, #ab65fa);
-      }
-      footer {
-        background: #323232;
-        padding: 20px;
-        text-align: center;
-      }
-      footer h3 {
-        font-family: "Shrikhand";
-        font-size: xxx-large;
-        color: #fff;
-        padding-bottom: 1.1rem;
-      }
-      .lien_footer a {
-        color: #fff;
-        text-decoration: none;
-        font-size: larger;
-      }
+          footer {
+            background: #323232;
+            padding: 30px 20px 60px 30px;
+            text-align: center;
+          }
     }
